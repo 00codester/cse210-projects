@@ -3,10 +3,10 @@ class Entry {
     public Entry () {
     }
 
-    public string _prompt;
+    //public string _prompt;
     public DateTime _date = DateTime.Now;
    
-    public string _response;
+    //public string _response;
 
     public string getPrompt () {
         PromptGenerator pGen = new PromptGenerator();
@@ -21,8 +21,7 @@ class Entry {
 
     
     public void displayEntry (string dateCurrent, string prompt, string response ) {
-        //string dateText = _date.ToShortDateString();
-        //_prompt = getPrompt();
+
         Console.WriteLine($"Date: {dateCurrent} - Prompt: {prompt}");
         Console.WriteLine($"{response}");
         Console.WriteLine();
