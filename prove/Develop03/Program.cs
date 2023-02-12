@@ -18,15 +18,15 @@ class Program
         bool gameOver = false;
         Console.Clear();
         verse.Display();
-        
+
         while ((gameOver == false) && (answer != "quit") ){
             
             Console.WriteLine($"\nPress enter to continue or type 'quit' to finish:");
             answer = Console.ReadLine();
-            verse.hiddenWordSelector();
+            verse.HiddenWordSelector();
             Console.Clear();
             verse.Display();
-            gameOver = verse.gameOver();
+            gameOver = verse.GameOver();
 
 
         }

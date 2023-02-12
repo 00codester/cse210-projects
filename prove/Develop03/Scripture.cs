@@ -25,7 +25,7 @@ class Scripture
         _verseHidden = verseText;
     }
 
-    public void hiddenWordSelector(){
+    public void HiddenWordSelector(){
         Random rnd = new Random();
         int listLength = _verse.Length;        
 
@@ -41,11 +41,11 @@ class Scripture
             _verse[_rand] = myWord.HiddenOrNot(_verse[_rand]);
         }
 
-        hiddenVerseCombiner();
+        HiddenVerseCombiner();
 
     }
 
-    public bool gameOver(){
+    public bool GameOver(){
         if (_verse.Length == _usedRandNums.Count){
             return true;
         }
@@ -54,7 +54,7 @@ class Scripture
         }
     }
 
-    private void hiddenVerseCombiner(){
+    private void HiddenVerseCombiner(){
         _verseHidden = "";
         foreach (string word in _verse){
             _verseHidden = _verseHidden + word + " ";
