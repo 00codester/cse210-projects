@@ -1,0 +1,4 @@
+680
+Simple:Tell truth,always tell the trush,10,True
+Eternal:tell lies,always lie to my face,20
+Checklist:Go to Temple,make it to any session,30,500,5,5
