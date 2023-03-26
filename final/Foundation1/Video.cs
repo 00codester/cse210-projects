@@ -1,9 +1,9 @@
 class Video{
 
-string _title = "";
-string _author = "";
-int _length = 0;
-List<Comment> _comments = new List<Comment>();
+private string _title = "";
+private string _author = "";
+private int _length = 0;
+private List<Comment> _comments = new List<Comment>();
 
 public Video (string name, string author, int vidLength){
     _title = name;
